@@ -3708,3 +3708,24 @@ input, select, textarea {
     top: auto;
   }
 }
+.grade-merit {
+  margin: 10px 0;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.grade-merit span {
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.grade {
+  background-color: #4CAF50; /* green for grade */
+}
+
+.merit {
+  background-color: #2196F3; /* blue for merit */
+}
