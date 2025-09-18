@@ -3609,3 +3609,73 @@ input, select, textarea {
 			}
 
 		}
+		.recommendations {
+  margin-top: 50px;
+}
+
+.recommendation-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.recommendation {
+  flex: 1 1 300px; /* adjusts width for responsive layout */
+  background-color: #f9f9f9;
+  border-left: 5px solid #0077cc;
+  padding: 20px;
+  border-radius: 8px;
+  font-style: italic;
+}
+
+.recommendation footer {
+  margin-top: 10px;
+  font-weight: bold;
+  font-style: normal;
+  color: #333;
+}
+
+.sticky-icons {
+  position: fixed;
+  top: 50%; /* center vertically */
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 1000;
+}
+
+.icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  font-size: 15px; /* icon size */
+  color: #fff;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+/* Hover effects */
+.icon-link:hover {
+  transform: scale(1.2);
+}
+
+/* Individual colors */
+.icon-link.linkedin {
+  background-color: #0a66c2;
+}
+
+.icon-link.linkedin:hover {
+  background-color: #004a8f;
+}
+
+.icon-link.email {
+  background-color: #ea4335;
+}
+
+.icon-link.email:hover {
+  background-color: #c1271b;
+}
