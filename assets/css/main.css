@@ -3679,3 +3679,32 @@ input, select, textarea {
 .icon-link.email:hover {
   background-color: #c1271b;
 }
+/* Flex layout for main content + sidebar */
+.content-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* Main article takes more space */
+.content-container .post {
+  flex: 3 1 600px; /* grows, shrinks, min-width 600px */
+}
+
+/* Sidebar takes smaller width */
+#sidebar {
+  flex: 1 1 250px;
+  position: sticky;
+  top: 20px; /* sticks 20px from top when scrolling */
+}
+
+/* Responsive: stack on small screens */
+@media screen and (max-width: 900px) {
+  .content-container {
+    flex-direction: column;
+  }
+  #sidebar {
+    position: relative;
+    top: auto;
+  }
+}
