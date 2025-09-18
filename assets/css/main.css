@@ -3720,13 +3720,16 @@ input, select, textarea {
   flex-direction: column; /* stack value and label */
   align-items: center;
   justify-content: center;
-  width: 120px;
-  height: 80px;
+  min-width: 160px;   /* increased width */
+  min-height: 100px;  /* increased height */
+  padding: 10px 15px; /* allow text to wrap */
   border-radius: 12px;
   font-weight: bold;
   color: #fff;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  text-align: center;
   transition: transform 0.2s;
+  word-wrap: break-word; /* break long text if needed */
 }
 
 .grade-merit .badge:hover {
@@ -3744,12 +3747,12 @@ input, select, textarea {
 
 /* Value and label styling */
 .grade-merit .value {
-  font-size: 1.5rem; /* bigger font */
+  font-size: 1.7rem; /* bigger font */
 }
 
 .grade-merit .label {
-  font-size: 0.9rem;
+  font-size: 1rem;   /* slightly bigger label */
   font-weight: normal;
-  margin-top: 5px;
+  margin-top: 8px;
   text-align: center;
 }
