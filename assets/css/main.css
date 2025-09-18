@@ -3709,23 +3709,47 @@ input, select, textarea {
   }
 }
 .grade-merit {
-  margin: 10px 0;
+  margin: 15px 0;
   display: flex;
-  gap: 15px;
+  gap: 25px;
   flex-wrap: wrap;
 }
 
-.grade-merit span {
-  padding: 5px 10px;
-  border-radius: 8px;
+.grade-merit .badge {
+  display: flex;
+  flex-direction: column; /* stack value and label */
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 80px;
+  border-radius: 12px;
   font-weight: bold;
   color: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.2s;
 }
 
-.grade {
-  background-color: #4CAF50; /* green for grade */
+.grade-merit .badge:hover {
+  transform: scale(1.05);
 }
 
-.merit {
-  background-color: #2196F3; /* blue for merit */
+/* Colors for badges */
+.grade-merit .grade {
+  background-color: #1abc9c; /* teal-ish */
+}
+
+.grade-merit .merit {
+  background-color: #e67e22; /* orange-ish */
+}
+
+/* Value and label styling */
+.grade-merit .value {
+  font-size: 1.5rem; /* bigger font */
+}
+
+.grade-merit .label {
+  font-size: 0.9rem;
+  font-weight: normal;
+  margin-top: 5px;
+  text-align: center;
 }
