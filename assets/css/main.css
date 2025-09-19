@@ -3756,3 +3756,18 @@ input, select, textarea {
   margin-top: 8px;
   text-align: center;
 }
+
+  .commission-list {
+    margin-left: 0;
+    padding-left: 1.25rem;
+    line-height: 1.5;
+  }
+  .commission-list li {
+    margin-bottom: 0.5rem;
+  }
+  .commission-list ul {
+    margin-top: 0.25rem;   /* keeps nested list tight to parent text */
+    margin-bottom: 0.25rem;
+    padding-left: 1.25rem;
+  }
+
